@@ -241,17 +241,8 @@ function endsWith(str, substr) {
  *   formatTime(0, 45) => "00:45"
  *   formatTime(0, 0) => "00:00"
  */
-function formatTime(minutes, seconds) {
-  // Ensure minutes and minutes are in the valid range
-  minutes = Math.max(0, Math.min(23, minutes));
-  seconds = Math.max(0, Math.min(59, seconds));
-
-  // Add leading zeros if needed
-  const formattedMinutes = minutes < 10 ? '0' + minutes : '' + minutes;
-  const formattedSeconds = seconds < 10 ? '0' + seconds : '' + seconds;
-
-  // Concatenate minutes and minutes with a colon
-  return formattedMinutes + ':' + formattedSeconds;
+function formatTime(/* minutes, seconds */) {
+  throw new Error('Not implemented');
 }
 
 /**
