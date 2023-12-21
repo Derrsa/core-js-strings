@@ -86,8 +86,8 @@ function getFirstChar(/* value */) {
  *   removeLeadingAndTrailingWhitespaces('cat ') => 'cat'
  *   removeLeadingAndTrailingWhitespaces('\t\t\tHello, World! ') => 'Hello, World!'
  */
-function removeLeadingAndTrailingWhitespaces(value) {
-  return value.trimRight().trimLeft();
+function removeLeadingAndTrailingWhitespaces(/* value */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -329,9 +329,8 @@ function countVowels(str) {
  *   isPalindrome('apple') => false
  *   isPalindrome('No lemon, no melon') => true
  */
-function isPalindrome(str) {
-  const cleanStr = str.toLowerCase().replace(/[^a-z]/g, '');
-  return cleanStr === cleanStr.split('').reverse().join('');
+function isPalindrome(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
